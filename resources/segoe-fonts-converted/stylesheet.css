@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: local('Segoe UI Bold'), local('SegoeUI-Bold'),
+        url('SegoeUI-Bold.woff2') format('woff2'),
+        url('SegoeUI-Bold.woff') format('woff'),
+        url('SegoeUI-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI Semilight';
+    src: local('Segoe UI Semilight'), local('SegoeUI-Semilight'),
+        url('SegoeUI-Semilight.woff2') format('woff2'),
+        url('SegoeUI-Semilight.woff') format('woff'),
+        url('SegoeUI-Semilight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: local('Segoe UI Semibold'), local('SegoeUI-Semibold'),
+        url('SegoeUI-Semibold.woff2') format('woff2'),
+        url('SegoeUI-Semibold.woff') format('woff'),
+        url('SegoeUI-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: local('Segoe UI'), local('SegoeUI'),
+        url('SegoeUI.woff2') format('woff2'),
+        url('SegoeUI.woff') format('woff'),
+        url('SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: local('Segoe UI Light'), local('SegoeUI-Light'),
+        url('SegoeUI-Light.woff2') format('woff2'),
+        url('SegoeUI-Light.woff') format('woff'),
+        url('SegoeUI-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
