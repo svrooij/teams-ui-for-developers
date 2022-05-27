@@ -1,0 +1,9 @@
+{%- assign component_pages = site.pages | where_exp:"item", "item.dir == '/components/'" -%}
+<div class="flex-none w-60 py-4 px-6 sidebar">
+  <h3>Components</h3>
+  <ul>
+  {%- for link in component_pages -%}
+  <li><a href="{{link.url}}">{{link.title}}</a></li>
+  {%- endfor -%}
+  </ul>
+</div>

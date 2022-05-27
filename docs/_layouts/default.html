@@ -1,0 +1,14 @@
+<!doctype html>
+<html class="h-full dark">
+  {% include head.html %}
+  <body class="h-full flex">
+    {% include sidebar.html %}
+
+    <div class="flex-auto py-4 px-6 overflow-y">
+      {% include header.html %}
+      <main class="py-4">
+        {{content}}
+      </main>
+    </div>
+  </body>
+</html>

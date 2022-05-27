@@ -1,0 +1,6 @@
+plugins:
+  - jekyll-github-metadata
+  - jemoji
+
+repository: svrooij/teams-ui-for-developers
+title: Teams UI for developers
