@@ -1,6 +1,12 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ page_title }}</title>
+  <title>
+  {%- if page.title -%}
+    {{site.title}} - {{page.title}}
+  {%- else -%}
+    {{site.title}}
+  {%- endif -%}
+  </title>
   <link href="{{ "/assets/css/main.css" | relative_url }}" rel="stylesheet" type="text/css">
   <link href="{{ "/assets/css/highlight.css" | relative_url }}" rel="stylesheet" type="text/css">
   <script>
