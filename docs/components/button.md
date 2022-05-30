@@ -17,7 +17,7 @@ To create a button you need to set the `btn` class to an object.
 ```css
 @layer components {
   .btn {
-    @apply bg-teams-100 hover:bg-teams-50 border-2
+    @apply bg-teamsb-fg hover:bg-teamsb-bg3 border-2
     border-transparent hover:border-white text-base
     text-white font-normal py-2 px-4 rounded;
   }

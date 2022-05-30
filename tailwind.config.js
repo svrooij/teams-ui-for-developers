@@ -10,16 +10,36 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        teams: {
-          50: '#5B5FC7',
-          100: '#4f52b2',
-          200: '#444791'
+        teamsb: {
+          bg1: '#e8ebfa',
+          bg2: '#3d3e78',
+          bg3: '#4f52b2',
+          bg4: '#444791',
+          fg: '#5b5fc7',
+          brb: '#9299f7',
         },
-        teamsbg: {
-          50: '#f5f5f5',
-          800: '#201f1f',
-          900: '#242424'
-        }
+        teamsn: {
+          bg: '#ffffff',
+          bg2: '#f5f5f5',
+          brd: '#d1d1d1',
+          fg: '#242424',
+          fg1: '#424242',
+          fg2: '#616161',
+          fgd: '#c7c7c7',
+        },
+        teamslight: {
+          bg: '#ffffff',
+          bg1: '#616161',
+          bg2: '#424242',
+          fg: '#242424'
+        },
+        teamsdark: {
+          brd: '#000000',
+          bg1: '#242424',
+          bg2: '#1f1f1f',
+          fg: '#ffffff'
+        },
+
       }
       
     },

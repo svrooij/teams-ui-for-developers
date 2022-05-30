@@ -438,10 +438,23 @@ h2 {
 }
 
 h3 {
-  margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   line-height: 2rem;
+  font-weight: 600;
+}
+
+h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 600;
 }
 
@@ -497,7 +510,7 @@ body {
 
 .dark body {
   --tw-bg-opacity: 1;
-  background-color: rgb(32 31 31 / var(--tw-bg-opacity));
+  background-color: rgb(31 31 31 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -507,7 +520,7 @@ body {
   border-width: 2px;
   border-color: transparent;
   --tw-bg-opacity: 1;
-  background-color: rgb(79 82 178 / var(--tw-bg-opacity));
+  background-color: rgb(91 95 199 / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -523,11 +536,10 @@ body {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(91 95 199 / var(--tw-bg-opacity));
+  background-color: rgb(79 82 178 / var(--tw-bg-opacity));
 }
 
 .card {
-  height: 2.5rem;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -549,6 +561,21 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.card-body {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.card-action {
+  display: flex;
+  align-items: center;
+}
+
 .sidebar {
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
@@ -560,22 +587,61 @@ body {
 }
 
 div.highlight {
-  margin-bottom: 0.75rem;
+  border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+div.highlight:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.dark div.highlight {
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 36 36 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+div.highlight {
+  margin-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.dark div.highlight {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+.btn-light {
+  display: none;
+}
+
+.dark .btn-light {
+  display: inline;
+}
+
+.btn-dark {
+  display: inline;
+}
+
+.dark .btn-dark {
+  display: none;
 }
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -584,10 +650,6 @@ div.highlight {
 
 .h-full {
   height: 100%;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .w-60 {
@@ -600,6 +662,14 @@ div.highlight {
 
 .flex-auto {
   flex: 1 1 auto;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .rounded {
@@ -619,14 +689,14 @@ div.highlight {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-teams-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(79 82 178 / var(--tw-bg-opacity));
-}
-
-.bg-teams-50 {
+.bg-teamsb-fg {
   --tw-bg-opacity: 1;
   background-color: rgb(91 95 199 / var(--tw-bg-opacity));
+}
+
+.bg-teamsb-bg3 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 82 178 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -634,7 +704,7 @@ div.highlight {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-teamsbg-900 {
+.bg-teamsdark-bg1 {
   --tw-bg-opacity: 1;
   background-color: rgb(36 36 36 / var(--tw-bg-opacity));
 }
@@ -657,6 +727,11 @@ div.highlight {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-4xl {

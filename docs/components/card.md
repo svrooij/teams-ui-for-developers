@@ -10,7 +10,15 @@ To create a card you need to set the `card` class to a div.
 
 ```html
 <div class="card">
-
+  <div class="card-body">
+    <div class="grow">
+      <h5>Card title</h5>
+      <p>Test</p>
+    </div>
+    <div class="card-action">
+      <span>...</span>
+    </div>
+  </div>
 </div>
 ```
 
@@ -19,8 +27,14 @@ To create a card you need to set the `card` class to a div.
 ```css
 @layer components {
   .card {
-    @apply bg-white dark:bg-teamsbg-900 dark:text-white
-    rounded h-10 shadow-md hover:shadow-lg;
+    @apply bg-white dark:bg-teamsdark-bg1
+    dark:text-white rounded shadow-md hover:shadow-lg;
+  }
+  .card-body {
+    @apply flex flex-row px-4 py-3 w-full;
+  }
+  .card-action {
+    @apply flex items-center;
   }
 }
 ```
@@ -28,5 +42,13 @@ To create a card you need to set the `card` class to a div.
 ### Sample
 
 <div class="card">
-
+  <div class="card-body">
+    <div class="grow">
+      <h5>Card title</h5>
+      <p>Test</p>
+    </div>
+    <div class="card-action">
+      <span>...</span>
+    </div>
+  </div>
 </div>
